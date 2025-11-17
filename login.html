@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html>
-
-
-<head>
+  <head>
     <title>NBA</title>
-    <link rel="stylesheet" href="style-login.css">
-</head>
+    <link rel="stylesheet" href="style-login.css" />
+  </head>
 
-
-<body class="login">
+  <body class="login">
     <!-- Sign Up -->
     <main class="container" id="main">
-        <section class="sign-up">
-            <form action="#">
-                <header>
-                    <h1>Create Account</h1>
-                </header>
-                <input type="text" name="txt" placeholder="Name" required="">
-                <input type="email" name="email" placeholder="Email" required="">
-                <input type="password" name="pswd" placeholder="Password" required="">
-                <button>Sign Up</button>
-            </form>
-        </section>
-        <!-- Sign In -->
+      <section class="sign-up">
+        <form action="#">
+          <header>
+            <h1>Create Account</h1>
+          </header>
+          <input type="text" name="txt" placeholder="Name" required="" />
+          <input type="email" name="email" placeholder="Email" required="" />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Password"
+            required=""
+          />
+          <button>Sign Up</button>
+        </form>
+      </section>
+      <!-- Sign In -->
 
-        <section class="sign-in">
-            <form action="#">
-                <header>
-                    <h1>Sign In</h1>
-                </header>
-                <input type="email" name="email" placeholder="Email" required="">
-                <input type="password" name="pswd" placeholder="Password" required="">
-                <a href="#">Forget your Passowrd?</a>
-                <button>Sign In</button>
-            </form>
-        </section>
+      <section class="sign-in">
+        <form action="#">
+          <header>
+            <h1>Sign In</h1>
+          </header>
+          <input type="email" name="email" placeholder="Email" required="" />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Password"
+            required=""
+          />
+          <a href="#">Forget your Passowrd?</a>
+          <button>Sign In</button>
+        </form>
+      </section>
 
-        <!-- Overlay -->
-        <aside class="overlay-container">
-            <div class="overlay">
-                <article class="overlay-left">
-                    <h1>Welcome Back!</h1>
-                    <button id="signIn">Sign In</button>
-                </article>
+      <!-- Overlay -->
+      <aside class="overlay-container">
+        <div class="overlay">
+          <article class="overlay-left">
+            <h1>Welcome Back!</h1>
+            <button id="signIn">Sign In</button>
+          </article>
 
-                <article class="overlay-right">
-                    <h1>Welcome!</h1>
-                    <button id="signUp">Sign Up</button>
-                </article>
-            </div>
-
-        </aside>
+          <article class="overlay-right">
+            <h1>Welcome!</h1>
+            <button id="signUp">Sign Up</button>
+          </article>
+        </div>
+      </aside>
     </main>
 
     <!-- javascript -->
     <script type="text/javascript">
-        const signUpButton = document.getElementById('signUp');
-        const signInButton = document.getElementById('signIn');
-        const main = document.getElementById('main');
+      const signUpButton = document.getElementById("signUp");
+      const signInButton = document.getElementById("signIn");
+      const main = document.getElementById("main");
 
-        signUpButton.addEventListener('click', () => {
-            main.classList.add('right-panel-active');
-        });
-        signInButton.addEventListener('click', () => {
-            main.classList.remove('right-panel-active');
-        });
-
+      signUpButton.addEventListener("click", () => {
+        main.classList.add("right-panel-active");
+      });
+      signInButton.addEventListener("click", () => {
+        main.classList.remove("right-panel-active");
+      });
     </script>
-
-
-
-
-</body>
-
+  </body>
 </html>

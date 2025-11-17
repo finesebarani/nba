@@ -1,5 +1,5 @@
 /* LOG IN */
-.login{
+.login {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -17,12 +17,12 @@
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-              0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   display: flex;
 }
 
-.sign-up, .sign-in {
+.sign-up,
+.sign-in {
   position: absolute;
   top: 0;
   height: 100%;
@@ -42,7 +42,7 @@
   z-index: 1;
 }
 
-form{
+form {
   background: #fff;
   display: flex;
   align-items: center;
@@ -53,12 +53,12 @@ form{
   text-align: center;
 }
 
-h1{
+h1 {
   font-weight: bold;
   margin: 5;
 }
 
-input{
+input {
   background: #eee;
   padding: 12px 15px;
   margin: 8px 15px;
@@ -68,37 +68,38 @@ input{
   outline: none;
 }
 
-a{
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 15px 0;
+a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
 }
 
-button{
-    color: #fff;
-    background: #b0984a;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 12px 55px;
-    margin: 20px;
-    border-radius: 20px;
-    border: 1px solid #b0984a;
-    outline: none;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: ease-in;
-    transform: 80ms;
-    cursor: pointer;
+button {
+  color: #fff;
+  background: #b0984a;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 55px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px solid #b0984a;
+  outline: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: ease-in;
+  transform: 80ms;
+  cursor: pointer;
 }
 
-button:active{
-    transform: scale(0.90);
+button:active {
+  transform: scale(0.9);
 }
 
-#signIn, #signUp{
-    background-color: transparent;
-    border: 2px solid #fff;
+#signIn,
+#signUp {
+  background-color: transparent;
+  border: 2px solid #fff;
 }
 
 .container.right-panel-active .sign-in {
@@ -142,23 +143,23 @@ button:active{
   transform: translateX(50%);
 }
 
-.overlay-left, .overlay-right {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    top: 0;
-    height: 100%;
-    width: 50%;
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
 }
 
 .overlay-left {
   left: 0;
   transform: translateX(-20%);
-
 }
 
 .overlay-right {
@@ -166,17 +167,17 @@ button:active{
   transform: translateX(0);
 }
 
-.social-container{
-    margin: 20px;
+.social-container {
+  margin: 20px;
 }
 
 .social-container a {
-    height: 40px;
-    width: 40px;
-    margin: 0 5px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 50%;
 }

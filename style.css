@@ -110,7 +110,6 @@ nav li a.login:hover {
   color: rgb(139, 138, 138);
 }
 
-
 /* WEST & EAST */
 .split-container {
   display: flex;
@@ -201,7 +200,7 @@ nav li a.login:hover {
   width: 70%;
 }
 
-.split.west:hover~.east {
+.split.west:hover ~ .east {
   width: 30%;
 }
 
@@ -221,7 +220,7 @@ nav li a.login:hover {
   width: 70%;
 }
 
-.split.east:hover~.west {
+.split.east:hover ~ .west {
   width: 30%;
 }
 
@@ -235,14 +234,6 @@ nav li a.login:hover {
   transform: scale(0.8);
   transition: opacity 0.5s, transform 0.5s;
 }
-
-
-
-
-
-
-
-
 
 /* DECORATION HEADLINE SECTION */
 .headline-container {
@@ -310,9 +301,6 @@ nav li a.login:hover {
   bottom: 100%;
 }
 
-
-
-
 /* NEW RAPPORTS */
 .slider-wrapper {
   position: relative;
@@ -330,13 +318,13 @@ nav li a.login:hover {
   border-radius: 0.5rem;
 }
 
-.slider img{
+.slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
 }
 
-.slider-nav{
+.slider-nav {
   display: flex;
   column-gap: 1rem;
   position: absolute;
@@ -357,9 +345,6 @@ nav li a.login:hover {
   opacity: 1;
 }
 
-
-
-
 /* HOMEPAGE - H2 */
 .homepage_h2 {
   margin: 10px;
@@ -368,25 +353,18 @@ nav li a.login:hover {
   padding-left: 180px;
 }
 
-
-
-
-
-
-
-
-
-
 /* STORY - SECTION */
 .story-container {
-  display: flex;
+  display: grid;
   justify-content: center;
   overflow-x: auto;
   padding: 0 30px;
 }
 
 .storyimages {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
   gap: 50px;
   list-style: none;
   padding: 0;
@@ -394,9 +372,7 @@ nav li a.login:hover {
 }
 
 .storyimages li {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  display: grid;
 }
 
 .storyimages li:hover {
@@ -410,7 +386,6 @@ nav li a.login:hover {
   object-fit: cover;
   border-radius: 20px;
   display: block;
-
 }
 
 .storyimages li img:hover {
@@ -418,9 +393,6 @@ nav li a.login:hover {
   transition: 1s;
   filter: grayscale(100%);
 }
-
-
-
 
 /* TRENDING - SECTION */
 .trending-container {
@@ -452,14 +424,13 @@ nav li a.login:hover {
   object-fit: cover;
   border-radius: 9px;
   display: block;
-  transition: .5s ease;
-
+  transition: 0.5s ease;
 }
 
 .trendingimages li img:hover {
   cursor: pointer;
   box-shadow: 0 0 0 10px rgb(243, 208, 104);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .trendingimages li p {
@@ -468,14 +439,6 @@ nav li a.login:hover {
   font-weight: bold;
   color: white;
 }
-
-
-
-
-
-
-
-
 
 /* FOOTER */
 footer {
@@ -488,7 +451,6 @@ footer .footer-top {
   display: flex;
   justify-content: space-evenly;
 }
-
 
 footer ul {
   display: flex;
@@ -538,20 +500,6 @@ footer img:hover {
   transition: 0, 9s ease;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* TICKETS */
 .tickets-header {
   color: rgb(255, 209, 69);
@@ -577,8 +525,6 @@ footer img:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
 
 /* Ticket's infinite scroller */
 .infinite-scroller {
@@ -611,10 +557,6 @@ footer img:hover {
   }
 }
 
-
-
-
-
 /* Ticket title */
 .tickets-openingtitle {
   text-align: center;
@@ -624,8 +566,6 @@ footer img:hover {
   font-weight: bolder;
   font-size: 45px;
 }
-
-
 
 /* Ticket shopping */
 .ticket-dates {
@@ -646,16 +586,15 @@ footer img:hover {
 }
 
 .ticket-info {
-    display: grid;
-    grid-template-columns: 150px 250px auto; 
-    align-items: center;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: 150px 250px auto;
+  align-items: center;
+  gap: 1rem;
 }
 
 .ticket-dates .teams img {
   width: 150px;
 }
-
 
 .ticket-item {
   margin: auto;
@@ -695,30 +634,9 @@ footer img:hover {
   transition: transform 0.5s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* GSW - Board */
 body.gsw {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   background: #f5f7fa;
   color: #333;
   font-size: 1rem;
@@ -732,7 +650,7 @@ table {
   border-collapse: collapse;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   min-width: 600px;
   margin: 40px 0;
@@ -743,7 +661,8 @@ thead {
   border-bottom: 2px solid #f1f1f1;
 }
 
-th, td {
+th,
+td {
   padding: 1rem 1.5rem;
   text-align: left;
 }
@@ -773,13 +692,25 @@ td {
   background: #3b82f6; /* blue, you can use team color! */
   font-size: 1em;
   letter-spacing: 0.03em;
-  box-shadow: 0 2px 6px rgba(59,130,246,0.08);
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.08);
 }
 
 @media (max-width: 700px) {
-  table, thead, tbody, th, td, tr { display: block; }
-  th { display: none; }
-  td { padding: 0.8em; }
-  tr { margin-bottom: 1.2em; }
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  th {
+    display: none;
+  }
+  td {
+    padding: 0.8em;
+  }
+  tr {
+    margin-bottom: 1.2em;
+  }
 }
-
